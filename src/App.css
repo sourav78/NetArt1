@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-cont {
+    min-height: 100vh;
+    background: linear-gradient(#fff, #ffe69c);
+    padding: 10px 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
+
+.hero {
+    padding-inline: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.trophy-img {
+    width: 30%;
+}
+
+.trophy {
+    width: 100%;
+}
+
+.award-section {
+    flex: 1;
+    padding: 10px 20px;
+}
+
+.award {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.service{
+    margin-top: 50px;
+}
+
+.service-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.service img{
+    width: 80%;
+}
+
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    margin-top: 20px;
+}
+
+.products{
+    margin-top: 20px;
+}
+
+.all-service{
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.all-service span:not(:last-child)::after{
+    content: "|";
+    font-weight: bolder;
+    color: red;
+    margin-inline: 5px;
+}
+
+.contacts{
+    height: 150px;
+    background-color: red;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact img{
+    width: 40px;
+}
+.contact span{
+    color: #fff;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 760px) {
+    .hero {
+        padding-inline: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .trophy-img {
+        width: 50%;
+    }
+
+    .contact img{
+        width: 30px;
+    }
+    .contact span{
+        color: #fff;
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 440px) {
+
+    .main-cont {
+
+        padding-inline: 8px;
+    }
+
+    .hero {
+        padding-inline: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .trophy-img {
+        width: 80%;
+    }
+    .service img{
+        width: 90%;
+    }
+
+    .contacts{
+        padding: 10px;
+        justify-content: start;
+    }
+}
